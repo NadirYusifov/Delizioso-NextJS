@@ -1,0 +1,27 @@
+.btn-green {
+    @apply bg-matt-green hover:bg-green-800 text-white font-bold rounded-full transition-all;
+}
+
+.btn-orange {
+    @apply bg-dark-orange hover:bg-orange-800 text-white font-bold rounded-full transition-all;
+}
+
+.btn-white {
+    @apply bg-white hover:bg-gray-300 text-medium-roast font-bold rounded-full transition-all;
+}
+
+.btn-size-sm {
+    @apply px-6 py-4 text-[18px];
+}
+
+@media screen and (min-width:0) {
+    .btn-size-md {
+        @apply px-8 py-4 text-[20px];
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .lg\:btn-size-lg {
+        @apply px-12 py-4 text-[20px];
+    }
+}
