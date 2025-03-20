@@ -6,6 +6,8 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  prefix: "",
+  important: true,
   // safelist:[
   //   {
   //     pattern: /bg-(green|blue|red)-500/,
