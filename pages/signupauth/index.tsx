@@ -1,26 +1,48 @@
 'use client'
 
 import { useState } from "react"
-import { Button } from "@mui/material"
+import { Button, Slide } from "@mui/material"
 import { useFormik } from "formik"
+import { IoEye, IoEyeOff } from "react-icons/io5"
+import { object, string } from "yup"
+import { toast, ToastContainer } from "react-toastify"
 import Link from "next/link"
 import LoginImage from "../../public/login1.png"
 import GoogleImage from "../../public/googlelogo.svg"
 import Image from "next/image"
-import { IoEye, IoEyeOff } from "react-icons/io5"
+
+
 
 export default function SignUpSection() {
   const [showpsw, setShowPsw] = useState(false)
 
+
+
+  const yupschema = object().shape({
+    fullname: string().required("Full Name is required"),
+    email: string().email().required("Email is required"),
+    password: string().min(8, "Password must be at least 8 characters").max(20, "Password must be at most 20 characters").required("Password is required")
+  })
+
+  const notfify = () => {
+    if (formik.isValid) {
+      toast.success("Account created successfully")
+    }
+    else {
+      toast.error("Account creation failed")
+    }
+  }
+
   const formik = useFormik({
     initialValues: {
-      fullanme: "",
+      fullname: "",
       email: "",
       password: "",
       toggle: false
     },
+    validationSchema: yupschema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+
     },
   });
 
@@ -34,36 +56,43 @@ export default function SignUpSection() {
           </div>
           <form onSubmit={formik.handleSubmit}>
             <div className="flex flex-col relative space-y-4">
-              <input
-                className="bg-infusion/15 p-4 border-none outline-none rounded-lg placeholder:text-grullo"
-                id="fullanme"
-                name="fullanme"
-                placeholder="Full Name"
-                onChange={formik.handleChange}
-                required
-              />
-              <input
-                className="bg-infusion/15 p-4 border-none outline-none rounded-lg placeholder:text-grullo"
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Email address"
-                onChange={formik.handleChange}
-                required
-              />
+              <div>
+                <input
+                  className={`w-full bg-infusion/15 p-4 border-none outline-none rounded-lg placeholder:text-grullo ${formik.errors.fullname && formik.touched.fullname ? "outline-red-500" : "outline-none"}`}
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Full Name"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {formik.errors.fullname && formik.touched.fullname ? <p className="text-red-500 text-[14px] mt-2">{formik.errors.fullname}</p> : null}
+              </div>
+              <div>
+                <input
+                  className={`w-full bg-infusion/15 p-4 border-none outline-none rounded-lg placeholder:text-grullo ${formik.errors.email && formik.touched.email ? "outline-red-500" : "outline-none"}`}
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Email address"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                />
+                {formik.errors.email && formik.touched.email ? <p className="text-red-500 text-[14px] mt-2">{formik.errors.email}</p> : null}
+              </div>
               <div className="relative">
                 <input
-                  className="w-full bg-infusion/15 p-4 border-none outline-none rounded-lg placeholder:text-grullo"
+                  className={`w-full bg-infusion/15 p-4 border-none outline-none rounded-lg placeholder:text-grullo ${formik.errors.password && formik.touched.password ? "outline-red-500" : "outline-none"}`}
                   id="password"
                   name="password"
-                  type={showpsw ? "text": "password"}
+                  type={showpsw ? "text" : "password"}
                   placeholder="Password"
                   onChange={formik.handleChange}
-                  required
+                  onBlur={formik.handleBlur}
                 />
-                <button type="button" className="text-[23px] absolute top-0 bottom-0 right-3 text-irish-coffee" onClick={() => setShowPsw(!showpsw)}>
+                <button type="button" className="text-[23px] absolute top-4 right-3 text-irish-coffee" onClick={() => setShowPsw(!showpsw)}>
                   {showpsw ? <span><IoEye /></span> : <span><IoEyeOff /></span>}
                 </button>
+                {formik.errors.password && formik.touched.password ? <p className="text-red-500 text-[14px] mt-2">{formik.errors.password}</p> : null}
               </div>
               <div className="text-[16px] flex items-center justify-between text-irish-coffee py-8">
                 <label>
@@ -79,7 +108,7 @@ export default function SignUpSection() {
                 <Link href="/">Forget Password?</Link>
               </div>
               <div className="flex flex-col">
-                <Button className="text-[16px] bg-dark-orange text-white p-4 rounded-lg leading-[100%] font-medium normal-case">Sign up</Button>
+                <Button onClick={notfify} disabled={!formik.values.toggle} type="submit" className={`text-[16px] bg-dark-orange text-white p-4 rounded-lg leading-[100%] font-medium normal-case ${formik.values.toggle ? "cursor-pointer opacity-100" : "cursor-not-allowed opacity-20"}`}>Sign up</Button>
                 <Button className="border-solid text-[16px] border-2 border-irish-coffee text-medium-roast rounded-lg p-4 mt-4 leading-[100%] normal-case"><Image className="mr-2" src={GoogleImage} width={25} height={25} alt="google-logo" />Sign up with google</Button>
               </div>
             </div>
@@ -89,6 +118,7 @@ export default function SignUpSection() {
           <Image className="w-full" src={LoginImage} width={900} height={900} quality={100} alt="signup-image" />
         </div>
       </div>
+      <ToastContainer position="top-center" pauseOnHover />
     </section>
   )
 }
