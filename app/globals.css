@@ -5,4 +5,29 @@
 ::selection {
     @apply bg-dark-orange
 }
+/* 
+@layer base {
+    textarea {
+        @apply w-full bg-infusion/15 rounded-lg p-4
+    }
 
+    textarea:focus {
+        @apply outline-none
+    }
+
+    textarea::placeholder {
+        @apply text-grullo
+    }
+
+    input {
+        @apply w-full bg-infusion/15 rounded-lg p-4
+    }
+
+    input:focus {
+        @apply outline-none
+    }
+
+    input::placeholder {
+        @apply text-grullo
+    }
+} */

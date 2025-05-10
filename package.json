@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "json-start": "json-server --watch _data/db.json --port 4000",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -16,6 +17,7 @@
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "formik": "^2.4.6",
+    "json-server": "^1.0.0-beta.3",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

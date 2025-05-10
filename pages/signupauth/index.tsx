@@ -118,7 +118,7 @@ export default function SignUpSection() {
           <Image className="w-full" src={LoginImage} width={900} height={900} quality={100} alt="signup-image" />
         </div>
       </div>
-      <ToastContainer position="top-center" pauseOnHover />
+      <ToastContainer position="top-center" pauseOnHover draggable stacked/>
     </section>
   )
 }

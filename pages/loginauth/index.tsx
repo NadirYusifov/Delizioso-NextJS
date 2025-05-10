@@ -104,7 +104,7 @@ export default function LoginSection() {
           <Image className="w-full" src={LoginImage} width={1000} height={900} quality={100} alt="login-image" />
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer position="top-center" pauseOnHover draggable stacked/>
     </section>
   );
 };

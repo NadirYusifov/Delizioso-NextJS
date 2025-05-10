@@ -10,7 +10,7 @@ export default function HeaderLink() {
                 <Link className="hover:translate-x-2 transition-all lg:hover:translate-x-0" href={'/aboutus'}>About us</Link>
                 <Link className="hover:translate-x-2 transition-all lg:hover:translate-x-0" href={'/'}>Order online</Link>
                 <Link className="hover:translate-x-2 transition-all lg:hover:translate-x-0" href={'/'}>Reservation</Link>
-                <Link className="hover:translate-x-2 transition-all lg:hover:translate-x-0" href={'/'}>Contact us</Link>
+                <Link className="hover:translate-x-2 transition-all lg:hover:translate-x-0" href={'/contactus'}>Contact us</Link>
             </nav>
         </>
     )

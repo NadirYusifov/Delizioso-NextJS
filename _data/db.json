@@ -1,0 +1,301 @@
+{
+    "foods": [
+        {
+            "id": 1,
+            "name": "Spaghetti",
+            "rating": 5,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 12.50,
+            "order_button": "Order now",
+            "image": "/foodsassets/spagetti.png"
+        },
+        {
+            "id": 2,
+            "name": "Gnocchi",
+            "rating": 5,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 14.30,
+            "order_button": "Order now",
+            "image": "/foodsassets/gnocchi.png"
+        },
+        {
+            "id": 3,
+            "name": "Rovioli",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 13.90,
+            "order_button": "Order now",
+            "image": "/foodsassets/rovioli.png"
+        },
+        {
+            "id": 4,
+            "name": "Penne Alla Vodak",
+            "rating": 5,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 15.00,
+            "order_button": "Order now",
+            "image": "/foodsassets/penneallavodak.png"
+        },
+        {
+            "id": 5,
+            "name": "Risoto",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 11.75,
+            "order_button": "Order now",
+            "image": "/foodsassets/risotofood.png"
+        },
+        {
+            "id": 6,
+            "name": "Splitza Signature",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 16.10,
+            "order_button": "Order now",
+            "image": "/foodsassets/splitzasignature.png"
+        },
+        {
+            "id": 7,
+            "name": "Splitza Signature2",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 13.20,
+            "order_button": "Order now",
+            "image": ""
+        },
+        {
+            "id": 8,
+            "name": "Splitza Signature",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 14.50,
+            "order_button": "Order now",
+            "image": ""
+        },
+        {
+            "id": 9,
+            "name": "Splitza Signature",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 17.00,
+            "order_button": "Order now",
+            "image": ""
+        },
+        {
+            "id": 10,
+            "name": "Splitza Signature",
+            "rating": 4,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.",
+            "price": 12.95,
+            "order_button": "Order now",
+            "image": ""
+        },
+        {
+            "id": 11,
+            "name": "Linguine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 18.00,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 12,
+            "name": "Capellini",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 11.99,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 13,
+            "name": "Fettuccine",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 14.25,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 14,
+            "name": "Bucatini",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.99,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 15,
+            "name": "Tortellini",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 10.50,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 16,
+            "name": "Fusilli",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 13.60,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 17,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 18,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 19,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 20,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 21,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 22,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 23,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 24,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 25,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 26,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 27,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 28,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 29,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 30,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 31,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 32,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        },
+        {
+            "id": 33,
+            "name": "Farfalle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat",
+            "price": 12.40,
+            "rating": 5,
+            "image": "",
+            "order_button": "Order now"
+        }
+    ]
+}

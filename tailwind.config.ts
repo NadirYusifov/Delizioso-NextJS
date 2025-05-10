@@ -6,7 +6,6 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  prefix: "",
   important: true,
   // safelist:[
   //   {
@@ -15,6 +14,9 @@ export default {
   // ],
   theme: {
     extend: {
+      // corePlugins: {
+      //   preflight: true
+      // },
       backgroundImage: {
         'workbgimage': "url('.../public/workbgimage.png')"
       },
